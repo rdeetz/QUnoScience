@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
+# GUID for the next project {2BB3235B-0BAE-44E5-A558-B568659FA813}
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUnoQuantum", "QUnoQuantum\QUnoQuantum.csproj", "{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}"
