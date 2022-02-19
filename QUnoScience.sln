@@ -1,10 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-# GUID for the next project {2BB3235B-0BAE-44E5-A558-B568659FA813}
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUnoQuantum", "QUnoQuantum\QUnoQuantum.csproj", "{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QUnoQuantum", "QUnoQuantum\QUnoQuantum.csproj", "{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUnoDoctor", "QUnoDoctor\QUnoDoctor.csproj", "{584E433D-D746-4AD1-A288-9153654EEF1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,8 +17,15 @@ Global
 		{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54CF6C27-FAEE-4BE6-8B37-44B64F728A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{584E433D-D746-4AD1-A288-9153654EEF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584E433D-D746-4AD1-A288-9153654EEF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584E433D-D746-4AD1-A288-9153654EEF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584E433D-D746-4AD1-A288-9153654EEF1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0F6B25D-86AE-4B04-B9D3-DFB764098656}
 	EndGlobalSection
 EndGlobal

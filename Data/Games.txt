@@ -1,0 +1,621 @@
+Usage: QUnoFunctional.exe [players] [games]
+
+Options:
+  <players>                The number of players in each game.
+  <games>                  The number of games to play.
+If you do not provide options, the default number of players is 4 and the default number of games is 1.
+
+QUno, version 5.0.0.0
+Copyright (c) 2008-2021 Roger Deetz. All rights reserved.
+
+We will play 16 games with 4 players each.
+
+Added Player 1 to game #1
+Added Player 2 to game #1
+Added Player 3 to game #1
+Added Player 4 to game #1
+Player 1 played Wild WildDrawFour and chose Red.
+Player 3 played Red Zero.
+Player 4 drew a card.
+Player 1 played Red Two.
+Player 2 played Red One.
+Player 3 played Wild Wild and chose Yellow.
+Player 4 played Yellow Skip.
+Player 2 played Yellow Seven.
+Player 3 played Yellow Reverse.
+Player 2 played Yellow Nine.
+Player 1 drew a card.
+Player 4 played Yellow Five.
+Player 3 played Green Five.
+Player 2 played Green One.
+Player 1 played Green Three.
+Player 4 played Green Reverse.
+Player 1 played Green Six.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Yellow Six.
+Player 1 drew a card.
+Player 2 played Yellow Two.
+Player 3 drew a card.
+Player 4 played Yellow DrawTwo.
+Player 2 played Blue DrawTwo.
+Player 4 drew a card.
+Player 1 played Blue Two.
+Player 2 played Blue Eight.
+Player 3 played Blue Four.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Blue Three.
+Player 3 played Red Three.
+Player 4 played Red Skip.
+Player 2 played Red Seven.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 played Red Eight.
+Player 2 played Red Five.
+Finished game #1. Player 2 won!
+
+Added Player 1 to game #2
+Added Player 2 to game #2
+Added Player 3 to game #2
+Added Player 4 to game #2
+Player 1 drew a card.
+Player 2 played Red Seven.
+Player 3 played Wild Wild and chose Green.
+Player 4 played Green Reverse.
+Player 3 played Green Nine.
+Player 2 played Green Two.
+Player 1 played Green Seven.
+Player 4 played Yellow Seven.
+Player 3 played Wild Wild and chose Red.
+Player 2 drew a card.
+Player 1 played Red One.
+Player 4 drew a card.
+Player 3 played Red Five.
+Player 2 drew a card.
+Player 1 drew a card.
+Player 4 drew a card.
+Player 3 played Blue Five.
+Finished game #2. Player 3 won!
+
+Added Player 1 to game #3
+Added Player 2 to game #3
+Added Player 3 to game #3
+Added Player 4 to game #3
+Player 1 played Wild Wild and chose Yellow.
+Player 2 played Yellow Nine.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 played Yellow Seven.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Green Seven.
+Player 1 played Green Two.
+Player 2 played Green Reverse.
+Player 1 drew a card.
+Player 4 played Green Three.
+Player 3 played Green Six.
+Player 2 played Blue Six.
+Player 1 drew a card.
+Player 4 played Blue Four.
+Player 3 played Blue Five.
+Player 2 drew a card.
+Player 1 played Wild WildDrawFour and chose Red.
+Player 3 drew a card.
+Player 2 played Red Reverse.
+Player 3 drew a card.
+Player 4 played Red Eight.
+Player 1 played Red Zero.
+Player 2 played Red Nine.
+Player 3 played Blue Nine.
+Player 4 played Blue Three.
+Player 1 drew a card.
+Player 2 played Red Three.
+Player 3 drew a card.
+Player 4 played Yellow Three.
+Player 1 played Yellow Four.
+Player 2 drew a card.
+Player 3 played Yellow Eight.
+Player 4 played Green Eight.
+Player 1 drew a card.
+Player 2 played Blue Eight.
+Player 3 played Blue One.
+Player 4 drew a card.
+Player 1 played Red One.
+Player 2 drew a card.
+Player 3 played Green One.
+Player 4 played Green Four.
+Player 1 drew a card.
+Player 2 played Wild Wild and chose Blue.
+Player 3 played Blue Zero.
+Player 4 drew a card.
+Player 1 played Blue Seven.
+Player 2 played Blue DrawTwo.
+Finished game #3. Player 2 won!
+
+Added Player 1 to game #4
+Added Player 2 to game #4
+Added Player 3 to game #4
+Added Player 4 to game #4
+Player 1 played Blue Four.
+Player 2 played Wild WildDrawFour and chose Green.
+Player 4 played Wild WildDrawFour and chose Blue.
+Player 2 drew a card.
+Player 3 played Blue Seven.
+Player 4 played Blue Two.
+Player 1 played Green Two.
+Player 2 played Green DrawTwo.
+Player 4 played Green Eight.
+Player 1 played Yellow Eight.
+Player 2 played Yellow Reverse.
+Player 1 played Yellow One.
+Player 4 played Blue One.
+Player 3 played Wild Wild and chose Red.
+Player 2 played Red One.
+Player 1 played Red Three.
+Player 4 played Blue Three.
+Finished game #4. Player 4 won!
+
+Added Player 1 to game #5
+Added Player 2 to game #5
+Added Player 3 to game #5
+Added Player 4 to game #5
+Player 1 played Blue Five.
+Player 2 played Blue Nine.
+Player 3 played Blue One.
+Player 4 played Wild WildDrawFour and chose Yellow.
+Player 2 played Yellow One.
+Player 3 played Yellow Three.
+Player 4 played Yellow Four.
+Player 1 played Yellow Nine.
+Player 2 played Yellow Eight.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 played Yellow Five.
+Player 2 drew a card.
+Player 3 played Red Five.
+Player 4 played Red Zero.
+Player 1 played Red Eight.
+Player 2 played Blue Eight.
+Player 3 played Wild WildDrawFour and chose Green.
+Player 1 played Green Two.
+Player 2 drew a card.
+Player 3 played Green Four.
+Player 4 played Green DrawTwo.
+Player 2 played Green Skip.
+Player 4 played Green Reverse.
+Player 3 drew a card.
+Player 2 drew a card.
+Player 1 played Wild Wild and chose Blue.
+Player 4 played Blue Reverse.
+Player 1 played Blue Skip.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 played Blue DrawTwo.
+Player 3 played Yellow DrawTwo.
+Player 1 played Red DrawTwo.
+Player 3 played Red Seven.
+Player 4 played Red Two.
+Player 1 played Red Three.
+Player 2 played Red Four.
+Player 3 played Red Nine.
+Finished game #5. Player 3 won!
+
+Added Player 1 to game #6
+Added Player 2 to game #6
+Added Player 3 to game #6
+Added Player 4 to game #6
+Player 1 played Green Three.
+Player 2 played Green Skip.
+Player 4 played Yellow Skip.
+Player 2 played Yellow Eight.
+Player 3 played Yellow Four.
+Player 4 played Yellow DrawTwo.
+Player 2 played Yellow One.
+Player 3 played Blue One.
+Player 4 played Blue Zero.
+Player 1 played Blue Reverse.
+Player 4 played Blue Five.
+Player 3 drew a card.
+Player 2 played Blue Four.
+Player 1 played Blue DrawTwo.
+Player 3 played Green DrawTwo.
+Player 1 played Red DrawTwo.
+Player 3 played Red Skip.
+Player 1 played Red Zero.
+Player 4 played Wild WildDrawFour and chose Green.
+Player 2 drew a card.
+Player 1 played Green Reverse.
+Player 2 played Green Four.
+Player 3 played Green One.
+Player 4 played Green Six.
+Player 1 drew a card.
+Player 2 played Red Six.
+Player 3 played Red One.
+Player 4 played Red Seven.
+Player 1 played Yellow Seven.
+Player 2 played Blue Seven.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Blue Three.
+Finished game #6. Player 2 won!
+
+Added Player 1 to game #7
+Added Player 2 to game #7
+Added Player 3 to game #7
+Added Player 4 to game #7
+Player 1 played Green Three.
+Player 2 played Green Nine.
+Player 3 played Blue Nine.
+Player 4 played Yellow Nine.
+Player 1 drew a card.
+Player 2 played Yellow Eight.
+Player 3 played Yellow Five.
+Player 4 played Yellow Seven.
+Player 1 played Yellow DrawTwo.
+Player 3 played Wild WildDrawFour and chose Red.
+Player 1 played Red Reverse.
+Player 4 played Red Nine.
+Player 3 played Red Skip.
+Player 1 played Red Six.
+Player 4 played Yellow Six.
+Player 3 played Yellow Three.
+Finished game #7. Player 3 won!
+
+Added Player 1 to game #8
+Added Player 2 to game #8
+Added Player 3 to game #8
+Added Player 4 to game #8
+Player 1 played Green Five.
+Player 2 played Green Six.
+Player 3 played Wild WildDrawFour and chose Yellow.
+Player 1 played Yellow One.
+Player 2 played Yellow Seven.
+Player 3 played Yellow Zero.
+Player 4 played Yellow Eight.
+Player 1 played Yellow Two.
+Player 2 drew a card.
+Player 3 played Yellow Six.
+Player 4 played Yellow Three.
+Player 1 played Red Three.
+Player 2 played Red Zero.
+Player 3 played Red Skip.
+Player 1 drew a card.
+Player 2 played Blue Skip.
+Player 4 played Blue Nine.
+Player 1 played Blue Five.
+Player 2 played Blue Seven.
+Player 3 drew a card.
+Player 4 played Blue Reverse.
+Player 3 drew a card.
+Player 2 drew a card.
+Player 1 drew a card.
+Player 4 played Green Reverse.
+Player 1 played Green Nine.
+Player 2 played Green DrawTwo.
+Player 4 played Green One.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 played Green Four.
+Player 4 played Red Four.
+Player 1 played Red Seven.
+Player 2 played Red Six.
+Player 3 played Red Two.
+Player 4 played Red Eight.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 played Blue Eight.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Blue DrawTwo.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Yellow DrawTwo.
+Finished game #8. Player 2 won!
+
+Added Player 1 to game #9
+Added Player 2 to game #9
+Added Player 3 to game #9
+Added Player 4 to game #9
+Player 1 played Blue Five.
+Player 2 played Blue DrawTwo.
+Player 4 drew a card.
+Player 1 played Wild Wild and chose Yellow.
+Player 2 played Yellow Two.
+Player 3 played Green Two.
+Player 4 played Green Four.
+Player 1 played Green Skip.
+Player 3 played Green Reverse.
+Player 2 played Green DrawTwo.
+Player 4 played Green One.
+Player 3 played Red One.
+Player 2 played Red Six.
+Player 1 played Red Skip.
+Player 3 played Red DrawTwo.
+Player 1 played Red Three.
+Player 4 played Green Three.
+Player 3 drew a card.
+Player 2 played Green Zero.
+Player 1 drew a card.
+Player 4 drew a card.
+Player 3 played Red Zero.
+Player 2 drew a card.
+Player 1 drew a card.
+Player 4 drew a card.
+Player 3 played Red Seven.
+Player 2 drew a card.
+Player 1 played Red Four.
+Player 4 played Yellow Four.
+Player 3 drew a card.
+Player 2 played Yellow Skip.
+Player 4 played Yellow Six.
+Player 3 played Blue Six.
+Player 2 played Blue Zero.
+Player 1 played Blue Eight.
+Player 4 played Blue Four.
+Player 3 played Blue Seven.
+Player 2 drew a card.
+Player 1 played Blue One.
+Player 4 drew a card.
+Player 3 played Blue Two.
+Finished game #9. Player 3 won!
+
+Added Player 1 to game #10
+Added Player 2 to game #10
+Added Player 3 to game #10
+Added Player 4 to game #10
+Player 1 played Red Nine.
+Player 2 played Red Skip.
+Player 4 played Wild WildDrawFour and chose Blue.
+Player 2 played Blue Four.
+Player 3 played Blue Reverse.
+Player 2 played Green Reverse.
+Player 3 played Green Three.
+Player 4 played Wild WildDrawFour and chose Blue.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Blue Eight.
+Player 1 played Blue Nine.
+Player 2 drew a card.
+Player 3 played Blue Six.
+Player 4 played Blue Seven.
+Player 1 played Blue Zero.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Blue DrawTwo.
+Finished game #10. Player 4 won!
+
+Added Player 1 to game #11
+Added Player 2 to game #11
+Added Player 3 to game #11
+Added Player 4 to game #11
+Player 1 played Yellow Six.
+Player 2 played Yellow Eight.
+Player 3 played Red Eight.
+Player 4 drew a card.
+Player 1 played Red Skip.
+Player 3 played Red Nine.
+Player 4 drew a card.
+Player 1 played Red Two.
+Player 2 played Red Seven.
+Player 3 drew a card.
+Player 4 played Blue Seven.
+Player 1 played Blue Six.
+Player 2 played Blue Four.
+Player 3 played Blue Zero.
+Player 4 played Blue Skip.
+Player 2 drew a card.
+Player 3 played Blue Five.
+Player 4 played Blue Three.
+Player 1 drew a card.
+Player 2 played Red Three.
+Player 3 played Red One.
+Player 4 played Yellow One.
+Player 1 played Yellow Skip.
+Player 3 played Yellow Zero.
+Finished game #11. Player 3 won!
+
+Added Player 1 to game #12
+Added Player 2 to game #12
+Added Player 3 to game #12
+Added Player 4 to game #12
+Player 1 played Wild Wild and chose Red.
+Player 2 played Red Nine.
+Player 3 played Blue Nine.
+Player 4 played Blue Seven.
+Player 1 played Blue Two.
+Player 2 played Blue Zero.
+Player 3 played Blue Three.
+Player 4 played Green Three.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 played Green DrawTwo.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Green Four.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Wild WildDrawFour and chose Yellow.
+Player 2 played Yellow Zero.
+Player 3 drew a card.
+Player 4 played Yellow Eight.
+Player 1 played Yellow One.
+Player 2 played Yellow Four.
+Player 3 played Yellow Six.
+Player 4 drew a card.
+Player 1 played Yellow Five.
+Player 2 played Blue Five.
+Player 3 played Red Five.
+Player 4 played Red Eight.
+Player 1 played Red Two.
+Player 2 played Red Seven.
+Player 3 played Red Six.
+Player 4 played Red Skip.
+Player 2 played Blue Skip.
+Player 4 played Blue One.
+Finished game #12. Player 4 won!
+
+Added Player 1 to game #13
+Added Player 2 to game #13
+Added Player 3 to game #13
+Added Player 4 to game #13
+Player 1 played Green Two.
+Player 2 drew a card.
+Player 3 played Green Reverse.
+Player 2 played Red Reverse.
+Player 3 played Red DrawTwo.
+Player 1 played Red Three.
+Player 2 played Red Six.
+Player 3 played Wild WildDrawFour and chose Yellow.
+Player 1 played Wild Wild and chose Red.
+Player 2 played Red Four.
+Player 3 drew a card.
+Player 4 played Green Four.
+Player 1 played Wild WildDrawFour and chose Red.
+Player 3 played Red Eight.
+Player 4 played Green Eight.
+Player 1 drew a card.
+Player 2 played Green Three.
+Player 3 played Blue Three.
+Player 4 played Blue Five.
+Player 1 played Blue Skip.
+Player 3 drew a card.
+Player 4 played Yellow Skip.
+Player 2 played Yellow Seven.
+Player 3 played Yellow Zero.
+Player 4 played Yellow One.
+Player 1 drew a card.
+Player 2 played Yellow DrawTwo.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Yellow Six.
+Player 3 played Green Six.
+Player 4 played Green Zero.
+Player 1 drew a card.
+Player 2 played Green Seven.
+Player 3 drew a card.
+Player 4 played Green One.
+Player 1 drew a card.
+Player 2 played Wild Wild and chose Blue.
+Player 3 played Blue Two.
+Player 4 played Blue Zero.
+Player 1 played Blue Eight.
+Player 2 played Blue Four.
+Finished game #13. Player 2 won!
+
+Added Player 1 to game #14
+Added Player 2 to game #14
+Added Player 3 to game #14
+Added Player 4 to game #14
+Player 1 played Red DrawTwo.
+Player 3 played Wild WildDrawFour and chose Green.
+Player 1 played Green Zero.
+Player 2 played Green DrawTwo.
+Player 4 played Green Reverse.
+Player 3 played Green Four.
+Player 2 played Green Nine.
+Player 1 drew a card.
+Player 4 played Green Five.
+Player 3 played Green Six.
+Player 2 drew a card.
+Player 1 drew a card.
+Player 4 played Blue Six.
+Player 3 played Wild Wild and chose Yellow.
+Player 2 drew a card.
+Player 1 played Yellow Reverse.
+Player 2 drew a card.
+Player 3 played Yellow Five.
+Player 4 played Yellow Seven.
+Player 1 played Yellow DrawTwo.
+Player 3 drew a card.
+Player 4 played Yellow One.
+Player 1 played Yellow Four.
+Player 2 played Yellow Three.
+Player 3 played Yellow Skip.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Yellow Nine.
+Player 1 played Wild WildDrawFour and chose Blue.
+Player 3 played Blue Skip.
+Player 1 played Blue Four.
+Player 2 played Blue Five.
+Player 3 played Red Five.
+Player 4 drew a card.
+Player 1 drew a card.
+Player 2 played Red Eight.
+Player 3 played Red Reverse.
+Finished game #14. Player 3 won!
+
+Added Player 1 to game #15
+Added Player 2 to game #15
+Added Player 3 to game #15
+Added Player 4 to game #15
+Player 1 played Yellow Five.
+Player 2 played Yellow One.
+Player 3 played Yellow Reverse.
+Player 2 played Red Reverse.
+Player 3 played Red Eight.
+Player 4 drew a card.
+Player 1 played Wild Wild and chose Green.
+Player 2 played Green Skip.
+Player 4 played Green Five.
+Player 1 played Green One.
+Player 2 played Green Three.
+Player 3 played Green Two.
+Player 4 played Blue Two.
+Player 1 drew a card.
+Player 2 drew a card.
+Player 3 played Blue Six.
+Player 4 played Blue Seven.
+Player 1 played Wild Wild and chose Yellow.
+Player 2 played Yellow Nine.
+Player 3 played Yellow Three.
+Finished game #15. Player 3 won!
+
+Added Player 1 to game #16
+Added Player 2 to game #16
+Added Player 3 to game #16
+Added Player 4 to game #16
+Player 1 played Wild Wild and chose Blue.
+Player 2 played Blue Three.
+Player 3 played Blue Seven.
+Player 4 played Yellow Seven.
+Player 1 played Yellow Four.
+Player 2 played Yellow Two.
+Player 3 drew a card.
+Player 4 drew a card.
+Player 1 played Blue Two.
+Player 2 played Blue Eight.
+Player 3 played Blue DrawTwo.
+Player 1 played Blue Nine.
+Player 2 drew a card.
+Player 3 drew a card.
+Player 4 played Green Nine.
+Player 1 drew a card.
+Player 2 played Green Five.
+Player 3 played Green Six.
+Player 4 played Green Three.
+Player 1 drew a card.
+Player 2 played Green Eight.
+Player 3 played Green Two.
+Player 4 played Green DrawTwo.
+Player 2 drew a card.
+Player 3 played Green One.
+Player 4 played Green Four.
+Player 1 played Blue Four.
+Player 2 played Red Four.
+Player 3 played Red Skip.
+Player 1 played Yellow Skip.
+Player 3 drew a card.
+Player 4 played Yellow DrawTwo.
+Player 2 played Red DrawTwo.
+Finished game #16. Player 2 won!
+
+Player 2 won 6 games
+Player 3 won 7 games
+Player 4 won 3 games
+

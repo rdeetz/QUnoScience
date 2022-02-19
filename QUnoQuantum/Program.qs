@@ -1,4 +1,8 @@
-﻿namespace Mooville.QUno.Quantum {
+﻿// <copyright file="Program.qs" company="Mooville">
+//   Copyright (c) 2022 Roger Deetz. All rights reserved.
+// </copyright>
+
+namespace Mooville.QUno.Quantum {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Convert;
