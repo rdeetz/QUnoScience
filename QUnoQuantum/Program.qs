@@ -28,7 +28,7 @@ namespace Mooville.QUno.Quantum {
     }
 
     operation GenerateRandomNumberInRange(max : Int) : Int {
-        mutable bits = new Result[0];
+        mutable bits = [];
 
         for indexBit in 1..BitSizeI(max) {
             set bits += [GenerateRandomNumber()];
