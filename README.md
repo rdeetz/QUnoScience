@@ -15,7 +15,17 @@ Scientific tools for an Uno-like card game.
 
 ## How To Play
 
-_Coming soon._
+`QUnoQuantum` is a console application for experiment with Q# and quantum concepts. Use `--help` to 
+see the required options. For example:
+
+```
+QUnoQuantum --max 32 --count 8 --initial Zero
+```
+
+This will generate a random quantum numbers up to 32, and then will test the state 
+of 8 qubits using an initial value of `Zero`.
+
+`QUnoDoctor` is a console application _to be continued_.
 
 ## Developer Notes
 
