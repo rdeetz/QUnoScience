@@ -10,16 +10,6 @@ namespace Mooville.QUno.Quantum {
     open Microsoft.Quantum.Measurement;
     open Microsoft.Quantum.Intrinsic;
 
-    //@EntryPoint()
-    operation HelloQ() : Int {
-        Message("Hello quantum world!");
-
-        let max = 50;
-        Message($"Creating random quantum numbers between 0 and {max}: ");
-
-        return GenerateRandomNumberInRange(max);
-    }
-
     operation GenerateRandomNumber() : Result {
         use q = Qubit();
         H(q);
@@ -45,7 +35,6 @@ namespace Mooville.QUno.Quantum {
         }
     }
 
-    @EntryPoint()
     operation TestBellState(count : Int, initial : Result) : (Int, Int, Int) {
         mutable numberOfOnes = 0;
         mutable agreements = 0;
@@ -71,8 +60,18 @@ namespace Mooville.QUno.Quantum {
         SetQubitState(Zero, q0);
         SetQubitState(Zero, q1);
 
-        Message("Test results are (# of 0s, # of 1s): ");
-
         return (count - numberOfOnes, numberOfOnes, agreements);
+    }
+
+    @EntryPoint()
+    operation Main(max: Int, count : Int, initial : Result) : (Int, Int, Int) {
+        Message("Hello quantum world!");
+
+        let randomNumber = GenerateRandomNumberInRange(max);
+        Message($"Creating random quantum number between 0 and {max}: {randomNumber}");
+
+        Message("Testing the result of states (number of Zeros, number of Ones, number of Agreements): ");
+
+        return TestBellState(count, initial);
     }
 }
