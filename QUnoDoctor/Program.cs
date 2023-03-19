@@ -20,12 +20,10 @@ var rootCommand = new RootCommand { inputFileOption, outputFileOption };
 rootCommand.Description = "An Uno-like card game.";
 
 rootCommand.SetHandler(
-    (FileInfo fileIn, FileInfo fileOut) => 
+    (FileInfo inFile, FileInfo outFile) => 
     {
-        Console.WriteLine($"The input file is: {fileIn?.FullName ?? String.Empty}");
-        Console.WriteLine($"The output file is: {fileOut?.FullName ?? String.Empty}");
-        inputFile ??= fileIn;
-        outputFile ??= fileOut;
+        inputFile = inFile;
+        outputFile = outFile;
     },
     inputFileOption, 
     outputFileOption
@@ -33,8 +31,17 @@ rootCommand.SetHandler(
 
 rootCommand.Invoke(args);
 
-if (inputFile != null)
-{
-    var inputStream = File.OpenRead(inputFile.FullName);
-    Console.WriteLine($"Number of bytes in input file: {inputStream.Length}");
-}
+Console.WriteLine($"The input file is: {inputFile?.FullName ?? String.Empty}");
+var inputStream = File.OpenRead(inputFile.FullName);
+
+Console.WriteLine($"Number of bytes in input file: {inputStream.Length}");
+
+Console.WriteLine($"The output file is: {outputFile?.FullName ?? String.Empty}");
+var outputStream = File.OpenWrite(outputFile.FullName);
+
+// TODO Process the input file and create the output file.
+
+inputStream.Close();
+outputStream.Close();
+
+Console.WriteLine("Finished");
