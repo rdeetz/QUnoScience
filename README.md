@@ -5,7 +5,7 @@ Scientific tools for an Uno-like card game.
 ## Requirements
 
 * [.NET SDK](https://dotnet.microsoft.com/download)
-* .NET 6 for C# projects
+* .NET 8 SDK for C# projects
 * [Visual Studio 2022](https://visualstudio.microsoft.com/) (I use the Community Edition, v17)
 * [ML.NET Model Builder 2022](https://marketplace.visualstudio.com/items?itemName=MLNET.ModelBuilder2022)
 * [Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)
