@@ -5,9 +5,10 @@
     "Version": 1
   },
   "Type": "TrainingConfig",
-  "Version": 4,
+  "Version": 5,
   "TrainingOption": {
-    "Version": 0,
+    "Version": 2,
+    "Subsampling": false,
     "Type": "RecommendationTrainingOption",
     "TrainingTime": 0,
     "Seed": 0
