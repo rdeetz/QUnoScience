@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Mooville.QUno.Doctor</RootNamespace>
     <OutputType>Exe</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Product>QUno</Product>
-    <Version>8.0.0</Version>
+    <Version>9.0.0</Version>
     <Authors>Roger Deetz</Authors>
     <Description>An Uno-like card game.</Description>
-    <Copyright>Copyright (c) 2022-2024 Roger Deetz. All rights reserved.</Copyright>
+    <Copyright>Copyright (c) 2022-2025 Roger Deetz. All rights reserved.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
