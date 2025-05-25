@@ -32,16 +32,12 @@ rootCommand.SetHandler(
 rootCommand.Invoke(args);
 
 Console.WriteLine($"The input file is: {inputFile?.FullName ?? String.Empty}");
-var inputStream = File.OpenRead(inputFile.FullName);
 
-Console.WriteLine($"Number of bytes in input file: {inputStream.Length}");
+//Console.WriteLine($"Number of bytes in input file: {inputStream.Length}");
 
 Console.WriteLine($"The output file is: {outputFile?.FullName ?? String.Empty}");
-var outputStream = File.OpenWrite(outputFile.FullName);
 
-// TODO Process the input file and create the output file.
-
-inputStream.Close();
-outputStream.Close();
+// Process the input file and create the output file.
+GameLogConverter.ConvertGameLogToCsv(inputFile.FullName, outputFile.FullName);
 
 Console.WriteLine("Finished");
