@@ -64,7 +64,7 @@ namespace Mooville.QUno.Quantum {
     }
 
     @EntryPoint()
-    operation Main(max: Int, count : Int, initial : Result) : (Int, Int, Int) {
+    operation Main(max : Int, count : Int, initial : Result) : (Int, Int, Int) {
         Message("Hello quantum world!");
 
         let randomNumber = GenerateRandomNumberInRange(max);
