@@ -18,7 +18,7 @@ public static class GameLogConverter
         List<string> csvRecords = new List<string>();
         
         // Add CSV header
-        csvRecords.Add("GameNumber,Player,Action,CardPlayed,ChosenColor");
+        csvRecords.Add("GameNumber,TurnNumber,Player,Action,CurrentCard,CardPlayed,ChosenColor,PlayableCards");
         
         int currentGameNumber = 0;
         
@@ -33,55 +33,58 @@ public static class GameLogConverter
                 {
                     currentGameNumber = gameNumber;
                 }
+                continue;
             }
-            // Parse player actions (played card)
-            else if (line.StartsWith("Player ") && line.Contains("played"))
+            
+            // Parse turn information in new format
+            var turnMatch = Regex.Match(line, @"\[Turn (\d+) current card is (.*?)\]");
+            if (turnMatch.Success)
             {
-                // Extract player number
-                string playerText = line.Substring(7); // Skip "Player "
-                string playerNumber = playerText.Substring(0, playerText.IndexOf(" "));
+                int turnNumber = int.Parse(turnMatch.Groups[1].Value);
+                string currentCard = turnMatch.Groups[2].Value;
                 
-                // Extract the card information
-                string cardInfo = line.Substring(line.IndexOf("played") + 7).TrimEnd('.');
-                
-                // Check if it's a wild card
-                if (cardInfo.StartsWith("Wild"))
+                // Extract player information
+                var playerMatch = Regex.Match(line, @"Player (\d+) (\w+)");
+                if (playerMatch.Success)
                 {
-                    string wildType = "";
+                    string playerNumber = playerMatch.Groups[1].Value;
+                    string action = playerMatch.Groups[2].Value;
+                    
+                    string cardPlayed = "N/A";
                     string chosenColor = "";
                     
-                    // Parse wild card and chosen color
-                    if (cardInfo.Contains("and chose"))
+                    if (action == "played")
                     {
-                        int andChoseIndex = cardInfo.IndexOf("and chose");
-                        wildType = cardInfo.Substring(0, andChoseIndex).Trim();
-                        chosenColor = cardInfo.Substring(andChoseIndex + 10).TrimEnd('.').Trim();
-                    }
-                    else
-                    {
-                        wildType = cardInfo.Trim();
+                        // Extract card played
+                        var cardMatch = Regex.Match(line, @"played (.*?)\.");
+                        if (cardMatch.Success)
+                        {
+                            cardPlayed = cardMatch.Groups[1].Value.TrimEnd('.');
+                            
+                            // Handle wild card color choice
+                            if (cardPlayed.Contains("Wild") && line.Contains("and chose"))
+                            {
+                                var wildMatch = Regex.Match(line, @"Wild Wild and chose (.*?)\.");
+                                if (wildMatch.Success)
+                                {
+                                    chosenColor = wildMatch.Groups[1].Value;
+                                    cardPlayed = "Wild Wild";
+                                }
+                            }
+                        }
                     }
                     
-                    csvRecords.Add($"{currentGameNumber},{playerNumber},Played,{wildType},{chosenColor}");
-                }
-                else
-                {
-                    // Regular card (Color Value)
-                    string[] cardParts = cardInfo.Split(' ', 2);
-                    if (cardParts.Length == 2)
+                    // Extract playable cards
+                    string playableCards = "";
+                    var playableMatch = Regex.Match(line, @"\(Could have played (.*?)\)");
+                    if (playableMatch.Success)
                     {
-                        string color = cardParts[0];
-                        string value = cardParts[1];
-                        csvRecords.Add($"{currentGameNumber},{playerNumber},Played,{color} {value},");
+                        playableCards = playableMatch.Groups[1].Value;
                     }
+                    
+                    // Add record to CSV
+                    csvRecords.Add($"{currentGameNumber},{turnNumber},{playerNumber},{action},{currentCard},{cardPlayed},{chosenColor},{playableCards}");
                 }
-            }
-            // For "drew a card" actions
-            else if (line.StartsWith("Player ") && line.Contains("drew a card"))
-            {
-                string playerText = line.Substring(7); // Skip "Player "
-                string playerNumber = playerText.Substring(0, playerText.IndexOf(" "));
-                csvRecords.Add($"{currentGameNumber},{playerNumber},Drew,N/A,");
             }
         }
         
