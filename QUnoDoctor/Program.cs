@@ -43,7 +43,7 @@ Console.WriteLine($"The output file is: {outputFile?.FullName ?? String.Empty}")
 // Process the input file and create the output file.
 //GameLogConverter.ConvertGameLogToCsv(inputFile.FullName, outputFile.FullName);
 
-const int _maxTokenLength = 1024;
+//const int _maxTokenLength = 1024;
 
 IChatClient? chatClient = null;
 CancellationTokenSource? cts = null;
@@ -61,6 +61,12 @@ try
         Stop = ["<|system|>", "<|user|>", "<|assistant|>", "<|end|>"]
     });
 
+    if (chatClient == null)
+    {
+        Console.WriteLine("Failed to create chat client.");
+        return;
+    }
+
     await Task.Run(
         async () =>
         {
@@ -69,14 +75,16 @@ try
 
             cts = new CancellationTokenSource();
 
-            await foreach (var messagePart in chatClient?.GetStreamingResponseAsync(
+            var messagePart = await chatClient.GetResponseAsync(
                 [
                     new ChatMessage(ChatRole.System, systemPrompt),
                     new ChatMessage(ChatRole.User, userPrompt)
                 ],
                 null,
-                cts.Token))
-            {
+                cts.Token);
+            Console.WriteLine($"{messagePart}");
+
+                /*
                 if (messagePart is ChatResponseUpdate responseUpdate && responseUpdate.Contents.Count > 0)
                 {
                     foreach (var content in responseUpdate.Contents)
@@ -91,7 +99,7 @@ try
                         }
                     }
                 }
-            }
+                */
 
             cts?.Dispose();
             cts = null;
@@ -99,7 +107,7 @@ try
 }
 catch (Exception ex)
 {
-    // Log an error.
+    Console.WriteLine($"An error occurred: {ex.Message}");
 }
 finally
 {
@@ -108,6 +116,5 @@ finally
     cts?.Dispose();
     cts = null;
 }
-
 
 Console.WriteLine("Finished");
